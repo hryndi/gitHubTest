@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap");
+:root {
+  --ulColor: #00c8538b;
+  --ulColor1: #ff000078;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #fffffe;
+  padding-top: 60px;
+}
+.underline {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.512);
+  text-decoration: none;
+  padding: 2px 6px;
+  background-image: linear-gradient(
+    120deg,
+    var(--ulColor) 0%,
+    var(--ulColor) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0 0.1em;
+  background-position: 0 100%;
+  transition: background-size 0.4s ease-in;
+  border-radius: 10px;
+}
+.u-hover:hover {
+  cursor: pointer;
+  background-size: 100% 0.1em;
+}
+.home a {
+  margin-left: 60px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: 1s;
+  text-shadow: 3px 3px 0px #4a494925;
+  background-image: linear-gradient(
+    120deg,
+    var(--ulColor1) 0%,
+    var(--ulColor1) 100%
+  );
+}
+.home a:hover {
+  text-shadow: none;
+  background-image: linear-gradient(
+    120deg,
+    var(--ulColor1) 0%,
+    var(--ulColor1) 100%
+  );
+}
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(251, 250, 250);
+  height: 50px;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  box-shadow: 0 2px 5px 2px #00000020;
+}
+
+.nav {
+  margin-right: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 5px;
+}
